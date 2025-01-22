@@ -1,8 +1,7 @@
-import { Button, Grid, HStack } from "@chakra-ui/react";
-import TiltedScroll from "./components/TiltedScroll";
-import Navbar from "./components/Navbar";
-import { WaveBackground } from "./components/WaveBackground";
 import About from "./components/About";
+import Navbar from "./components/Navbar";
+import TiltedScroll from "./components/TiltedScroll";
+import { WaveBackground } from "./components/WaveBackground";
 
 function App() {
   return (
