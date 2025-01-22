@@ -1,7 +1,6 @@
-import React from 'react'
-import {motion} from 'framer-motion'
-import { FaGithub, FaLinkedin } from 'react-icons/fa6'
-import { MdMail } from 'react-icons/md'
+import { motion } from 'framer-motion';
+import { FaGithub, FaLinkedin } from 'react-icons/fa6';
+import { MdMail } from 'react-icons/md';
 
 export default function About() {
     const container = {
