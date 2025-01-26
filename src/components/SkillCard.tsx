@@ -1,6 +1,8 @@
-import React from "react";
+import { Image, VStack } from "@chakra-ui/react";
 import { motion } from "framer-motion";
-export const SkillCard = ({ skill, logo }: { skill: string }) => {
+import { Skill } from "./Skills";
+
+export const SkillCard = ({ title, logo }: Skill) => {
   return (
     <motion.div
       whileHover={{
@@ -18,7 +20,10 @@ export const SkillCard = ({ skill, logo }: { skill: string }) => {
       }}
       className="text-center p-6 rounded-lg bg-slate-800/50 backdrop-blur-sm border border-slate-700/50"
     >
-      <span className="font-medium text-slate-200">{skill}</span>
+      <VStack>
+        <Image src={logo} alt={title} objectFit="contain" />
+        <span className="font-medium text-slate-200">{title.replace(/^./, char => char.toUpperCase())}</span>
+      </VStack>
     </motion.div>
   );
 };

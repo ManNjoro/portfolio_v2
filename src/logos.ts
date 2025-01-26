@@ -8,7 +8,7 @@ import tailwind from './assets/tailwind.png'
 import typescript from './assets/typescript.png'
 import vite from './assets/vite.png'
 
-export default {
+export {
     django,
     javascript,
     mysql,

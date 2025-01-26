@@ -1,5 +1,7 @@
 import About from "./components/About";
 import Navbar from "./components/Navbar";
+import Projects from "./components/Projects";
+import Skills from "./components/Skills";
 import TiltedScroll from "./components/TiltedScroll";
 import { WaveBackground } from "./components/WaveBackground";
 
@@ -12,6 +14,8 @@ function App() {
         <About />
         <TiltedScroll />
       </div>
+      <Skills />
+      <Projects />
     </div>
   );
 }
