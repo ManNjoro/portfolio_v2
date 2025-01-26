@@ -1,5 +1,3 @@
-import React from "react";
-import { FadeInView } from "./FadeInView";
 import {
   django,
   javascript,
@@ -11,6 +9,7 @@ import {
   typescript,
   vite,
 } from "../logos";
+import { FadeInView } from "./FadeInView";
 import { SkillCard } from "./SkillCard";
 
 export interface Skill {
