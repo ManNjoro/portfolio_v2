@@ -1,5 +1,5 @@
 import { nanoid } from "nanoid";
-import { federated,mkulima,zoomeek } from "@/logos";
+import { federated,game,mkulima,zoomeek } from "@/logos";
 
 type Project = {
     id: string;
@@ -34,6 +34,14 @@ const projects: Project[] = [
         image: mkulima,
         url: "https://github.com/ManNjoro/federated_learning",
         technologies: ['react native','javascript', 'expo','sqlite']
+    },
+    {
+        id: nanoid(),
+        title: "Game Hub",
+        description: "A Video Game Discovery App",
+        image: game,
+        url: "https://game-hub-eli.vercel.app/",
+        technologies: ['react','typescript', 'chakra ui','RAWG API']
     },
 ]
 

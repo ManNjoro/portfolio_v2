@@ -12,10 +12,12 @@ import vite from './assets/vite.png'
 import zoomeek from './assets/zoomeek.png'
 import federated from './assets/federated.png'
 import mkulima from './assets/mkulima.jpeg'
+import game from './assets/game.png'
 
 export {
     django,
     federated,
+    game,
     javascript,
     mkulima,
     mysql,
