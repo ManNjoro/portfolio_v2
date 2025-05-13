@@ -1,5 +1,5 @@
 import { nanoid } from "nanoid";
-import { federated,game,mkulima,portfolio1,zoomeek } from "@/logos";
+import { federated,game,mkulima,portfolio1,portfolio2,zoomeek } from "@/logos";
 
 type Project = {
     id: string;
@@ -48,16 +48,16 @@ const projects: Project[] = [
         title: "Portfolio V1",
         description: "My portfolio version 1 😅",
         image: portfolio1,
-        url: "https://game-hub-eli.vercel.app/",
-        technologies: ['react','typescript', 'chakra ui','RAWG API']
+        url: "https://elimyportfolio.netlify.app/",
+        technologies: ['react','javascript', 'css']
     },
     {
         id: nanoid(),
         title: "Portfolio V2",
         description: "My portfolio version 2 😎",
-        image: game,
-        url: "https://game-hub-eli.vercel.app/",
-        technologies: ['react','typescript', 'chakra ui','RAWG API']
+        image: portfolio2,
+        url: "#",
+        technologies: ['react','typescript', 'tailwind', 'framer-motion']
     },
 ]
 
