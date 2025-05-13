@@ -61,22 +61,23 @@ export default function About() {
             duration: 0.5,
           }}
         >
+          <TextBlurAnimation className="text-3xl sm:text-4xl font-bold mb-2 bg-gradient-to-r text-blue-400 from-blue-400 to-purple-400 bg-clip-text">
+            Software Engineer
+          </TextBlurAnimation>
             <BlurText
-            text='React Native Developer'
+            text='React Native Developer😎'
               delay={150}
               animateBy="words"
               direction="top"
               onAnimationComplete={handleAnimationComplete}
-              className="text-4xl sm:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-purple-400"
+              className="text-2xl sm:text-3xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-purple-400"
             />
-          <TextBlurAnimation className="text-2xl sm:text-3xl font-bold mb-6 bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text">
+          <TextBlurAnimation className="text-xl sm:text-2xl font-bold mb-6 bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text">
             Machine Learning Engineer & Data Scientist
 
           </TextBlurAnimation>
-          <TextAnimation className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-            Crafting intelligent mobile experiences and building data-driven
-            solutions at the intersection of mobile development and artificial
-            intelligence.
+          <TextAnimation className="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">
+            Welcome to my portfolio! I'm a Software Engineer passionate about building robust, scalable web applications and crafting intelligent mobile experiences. With expertise in full-stack development and AI, I thrive at the intersection of technology and innovation, creating seamless user experiences and data-driven solutions. Let's collaborate and bring your next project to life!
           </TextAnimation>
         </motion.div>
         <motion.div

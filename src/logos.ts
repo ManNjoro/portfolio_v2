@@ -13,6 +13,7 @@ import zoomeek from './assets/zoomeek.png'
 import federated from './assets/federated.png'
 import mkulima from './assets/mkulima.jpeg'
 import game from './assets/game.png'
+import portfolio1 from './assets/portfolio1.png'
 
 export {
     django,
@@ -22,6 +23,7 @@ export {
     mkulima,
     mysql,
     nodejs,
+    portfolio1,
     python,
     reactjs,
     tailwind,

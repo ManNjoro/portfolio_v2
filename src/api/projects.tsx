@@ -1,5 +1,5 @@
 import { nanoid } from "nanoid";
-import { federated,game,mkulima,zoomeek } from "@/logos";
+import { federated,game,mkulima,portfolio1,zoomeek } from "@/logos";
 
 type Project = {
     id: string;
@@ -39,6 +39,22 @@ const projects: Project[] = [
         id: nanoid(),
         title: "Game Hub",
         description: "A Video Game Discovery App",
+        image: game,
+        url: "https://game-hub-eli.vercel.app/",
+        technologies: ['react','typescript', 'chakra ui','RAWG API']
+    },
+    {
+        id: nanoid(),
+        title: "Portfolio V1",
+        description: "My portfolio version 1 😅",
+        image: portfolio1,
+        url: "https://game-hub-eli.vercel.app/",
+        technologies: ['react','typescript', 'chakra ui','RAWG API']
+    },
+    {
+        id: nanoid(),
+        title: "Portfolio V2",
+        description: "My portfolio version 2 😎",
         image: game,
         url: "https://game-hub-eli.vercel.app/",
         technologies: ['react','typescript', 'chakra ui','RAWG API']

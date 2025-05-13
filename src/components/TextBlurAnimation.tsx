@@ -7,20 +7,20 @@ interface Props {
 }
 
 const TextBlurAnimation = ({ children, className }: Props) => {
-  const textElement = typeof children === "string" ? children : String(children); // The text you want to animate
+  const textElement = typeof children === "string" ? children : String(children);
 
-  // Split the text into an array of words
+
   const words: string[] = textElement.split(" ");
 
-  const [blurred, setBlurred] = useState(true); // To control when to remove the blur
-  const [animationComplete, setAnimationComplete] = useState(false); // To track when all text has appeared
+  const [blurred, setBlurred] = useState(true);
+  const [animationComplete, setAnimationComplete] = useState(false);
 
   // Trigger blur removal after the text is fully displayed
   useEffect(() => {
     if (animationComplete) {
       const timer = setTimeout(() => {
-        setBlurred(false); // Remove the blur after text animation is complete
-      }, 500); // Wait for 500ms to let the text appear completely
+        setBlurred(false);
+      }, 500);
       return () => clearTimeout(timer);
     }
   }, [animationComplete]);
@@ -48,21 +48,21 @@ const TextBlurAnimation = ({ children, className }: Props) => {
           key={index}
           initial={{
             opacity: 0,
-            filter: "blur(3px)", // Start with a blur
+            filter: "blur(3px)",
           }}
           animate={{
             opacity: 1,
-            filter: blurred ? "blur(3px)" : "blur(0px)", // Blur will be removed gradually
+            filter: blurred ? "blur(3px)" : "blur(0px)",
           }}
           transition={{
-            delay: index * 0.3, // Delay each word by 0.3s
-            duration: 0.5, // Duration of the animation
+            delay: index * 0.3,
+            duration: 0.5,
             type: "spring",
             stiffness: 100,
             damping: 25,
             onComplete: () => {
               if (index === words.length - 1) {
-                setAnimationComplete(true); // Set flag when last word animation is done
+                setAnimationComplete(true);
               }
             },
           }}

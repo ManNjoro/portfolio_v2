@@ -7,9 +7,8 @@ interface Props {
 }
 
 const TextAnimation = ({ children, className }: Props) => {
-    const textElement = typeof children === 'string' ? children : String(children); // The text you want to animate
+    const textElement = typeof children === 'string' ? children : String(children);
 
-    // Split the text into an array of words
     const words: string[] = textElement.split(' ');
 
     return (
@@ -19,15 +18,14 @@ const TextAnimation = ({ children, className }: Props) => {
             animate={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
             transition={{ duration: 1 }}
         >
-            {/* Animate each word with a slight delay */}
             {words.map((word: string, index: number) => (
                 <span key={index} className="inline-block">
                     <motion.span
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{
-                            delay: index * 0.3, // Delay each word by 0.3s
-                            duration: 0.5, // Duration of the animation
+                            delay: index * 0.3,
+                            duration: 0.5,
                             type: 'spring',
                             stiffness: 100,
                             damping: 25,
@@ -35,7 +33,6 @@ const TextAnimation = ({ children, className }: Props) => {
                     >
                         {word}
                     </motion.span>
-                    {/* Add a space after each word except for the last one */}
                     {index < words.length - 1 && <>&nbsp;</>}
                 </span>
             ))}
