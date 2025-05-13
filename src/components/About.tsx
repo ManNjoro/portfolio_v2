@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin } from "react-icons/fa6";
 import { MdMail } from "react-icons/md";
-import BlurText from "./BlurText";
 import TextAnimation from "./TextAnimation";
 import { IconType } from "react-icons";
 import TextBlurAnimation from "./TextBlurAnimation";
@@ -38,9 +37,6 @@ export default function About() {
       },
     },
   };
-  const handleAnimationComplete = () => {
-    console.log("Animation completed!");
-  };
 
   return (
     <section
@@ -61,17 +57,10 @@ export default function About() {
             duration: 0.5,
           }}
         >
-          <TextBlurAnimation className="text-3xl sm:text-4xl font-bold mb-2 bg-gradient-to-r text-blue-400 from-blue-400 to-purple-400 bg-clip-text">
+          <TextBlurAnimation className="text-4xl sm:text-5xl font-bold mb-2 bg-gradient-to-r text-blue-400 from-blue-400 to-purple-400 bg-clip-text">
             Software Engineer
           </TextBlurAnimation>
-            <BlurText
-            text='React Native Developer😎'
-              delay={150}
-              animateBy="words"
-              direction="top"
-              onAnimationComplete={handleAnimationComplete}
-              className="text-2xl sm:text-3xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-purple-400"
-            />
+            <TextBlurAnimation className="text-2xl sm:text-3xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-purple-400">React Native Developer😎</TextBlurAnimation>
           <TextBlurAnimation className="text-xl sm:text-2xl font-bold mb-6 bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text">
             Machine Learning Engineer & Data Scientist
 
