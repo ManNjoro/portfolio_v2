@@ -15,12 +15,14 @@ import mkulima from './assets/mkulima.jpeg'
 import game from './assets/game.png'
 import portfolio1 from './assets/portfolio1.png'
 import portfolio2 from './assets/portfolio2.png'
+import loading from './assets/loading.png'
 
 export {
     django,
     federated,
     game,
     javascript,
+    loading,
     mkulima,
     mysql,
     nodejs,

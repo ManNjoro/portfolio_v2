@@ -25,14 +25,14 @@ const projects: Project[] = [
         description: "A privacy-preserving AI system for early diabetes prediction using distributed machine learning across healthcare institutions.",
         image: federated,
         url: "https://github.com/ManNjoro/federated_learning",
-        technologies: ['react','javascript', 'tailwind','python', 'flask', 'flower']
+        technologies: ['react','javascript', 'tailwind','python', 'flask', 'flower', 'federated learning']
     },
     {
         id: nanoid(),
         title: "M-kulima",
         description: "A Farm Management Mobile Application designed to help farmers track and manage their agricultural operations",
         image: mkulima,
-        url: "https://github.com/ManNjoro/federated_learning",
+        url: "https://drive.google.com/file/d/1Lzk7rp9iZWKZRcF8lbnPVGeVT90agaar/view?usp=drive_link",
         technologies: ['react native','javascript', 'expo','sqlite']
     },
     {

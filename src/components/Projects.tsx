@@ -1,8 +1,10 @@
 import { motion } from "framer-motion";
-import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
+import { FaExternalLinkAlt, FaGithub, FaArrowRight } from 'react-icons/fa';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import projects from "@/api/projects";
+import { loading } from "@/logos";
+import { GITHUB } from "@/constants";
 
 export default function Projects() {
   return (
@@ -30,7 +32,7 @@ export default function Projects() {
                   effect="blur"
                   className="w-full h-full object-cover"
                   wrapperClassName="w-full h-full"
-                  placeholderSrc="/placeholder-image.jpg" // Optional low-res placeholder
+                  placeholderSrc={loading}
                 />
               </div>
 
@@ -79,6 +81,30 @@ export default function Projects() {
             </motion.div>
           ))}
         </div>
+
+        {/* Check More Projects Button */}
+        <motion.div 
+          className="flex justify-center mt-12"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ delay: 0.5 }}
+          viewport={{ once: true }}
+        >
+          <motion.a
+            href={GITHUB}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full text-white font-medium hover:shadow-lg transition-all duration-300"
+            whileHover={{ 
+              scale: 1.05,
+              boxShadow: "0 10px 20px -5px rgba(59, 130, 246, 0.5)"
+            }}
+            whileTap={{ scale: 0.95 }}
+          >
+            Check More Projects on GitHub
+            <FaArrowRight className="ml-1" />
+          </motion.a>
+        </motion.div>
       </div>
     </section>
   );
